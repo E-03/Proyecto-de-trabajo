@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Solicitudes.Clase
 {
-    public class CrudUsuario : Conexion
+    public class CrudUsuario : DetalleSolicitud.Clases.ConexionS
     {
         public void agregarUsuario(string Nombre, string Apellido, string telefono, string Correo,string contraseña, string Organizacion)
         {

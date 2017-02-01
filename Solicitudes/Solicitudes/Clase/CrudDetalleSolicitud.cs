@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Solicitudes.Clase
 {
-    public class CrudDetalleSolicitud : Conexion
+    public class CrudDetalleSolicitud : DetalleSolicitud.Clases.ConexionS
     {
         public void agregarDetalleSolicitud(/*int Id_Detalle_Solicitud,*/string Estado_Solicitud, string Estado_Solicitud2, string Prioridad_Solicitud, DateTime Fecha_solicitud,string Descripcion, int Departamento_SolicitanteFK, int Id_ClienteFk, int Id_Problemafk)
         {

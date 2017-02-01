@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace Solicitudes.Clase
 {
-    public class LlenarComboDetalleSolicitud : Conexion
+    public class LlenarComboDetalleSolicitud : DetalleSolicitud.Clases.ConexionS
     {
         //----------------------------------------------------------------------------------------//
         /// <summary>
