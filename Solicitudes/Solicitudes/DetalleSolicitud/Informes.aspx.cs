@@ -22,9 +22,18 @@ namespace Solicitudes.DetalleSolicitud
 
         protected void btnVerInforme_Click(object sender, EventArgs e)
         {
-            dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter pr = new dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter();
-            dbSolicitudesWFDataSet Solicitud = new dbSolicitudesWFDataSet();
-            pr.Fill(Solicitud.pro_Ver_Solicitudes_Abiertas,txtInformes.Text);
+            try
+            {
+                dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter pr = new dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter();
+                dbSolicitudesWFDataSet Solicitud = new dbSolicitudesWFDataSet();
+                pr.Fill(Solicitud.pro_Ver_Solicitudes_Abiertas, txtInformes.Text);
+            }
+            catch (Exception ex)
+            {
+
+                lblresul.Text = "Error " + ex.Message;
+            }
+           
         }
         public void LlenarGridDetalleVenta(GridView GridView)
         {

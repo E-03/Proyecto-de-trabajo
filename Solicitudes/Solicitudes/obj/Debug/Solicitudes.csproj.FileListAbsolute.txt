@@ -1,7 +1,6 @@
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\bin\Solicitudes.dll.config
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\bin\Solicitudes.dll
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\bin\Solicitudes.pdb
-C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\obj\Debug\Solicitudes.csprojResolveAssemblyReference.cache
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\obj\Debug\Solicitudes.dll
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\obj\Debug\Solicitudes.pdb
 C:\Users\Eber Fabal\Desktop\Proyecto de trabajo\Solicitudes\Solicitudes\obj\Debug\RdlCompile.cache
