@@ -68,8 +68,9 @@
                     <asp:Parameter Name="Estado_Solicitud" Type="String" />
                 </SelectParameters>
             </asp:ObjectDataSource>
-               
+            <asp:Label ID="lblresul" runat="server" Text="Label"></asp:Label>   
         </div>
+        
     </form>
 </body>
 </html>
