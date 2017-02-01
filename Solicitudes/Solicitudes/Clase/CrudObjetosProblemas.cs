@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Solicitudes.Clase
 {
-    public class CrudObjetosProblemas : Conexion
+    public class CrudObjetosProblemas : DetalleSolicitud.Clases.ConexionS
     {
         public void agregarObtetoProblema(string TituloObjeto, string DescripcionProblema)
         {

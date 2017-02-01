@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Solicitudes.Clase
 {
-    public class Login : Conexion
+    public class Login : DetalleSolicitud.Clases.ConexionS
     {
         public bool Loguear_empleado(string Nombre, string Contraseña)
         {
