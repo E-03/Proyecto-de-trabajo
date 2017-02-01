@@ -200,6 +200,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Reportes\Reporte.rdlc" />

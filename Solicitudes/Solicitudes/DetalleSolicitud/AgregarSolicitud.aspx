@@ -73,6 +73,14 @@
                  <h1>Subir archivo</h1>
                  <h3>Seleccione un archivo aqui...</h3>
                  <asp:FileUpload ID="FileUpload1" runat="server" CssClass="btn btn-default"/>
+                 <br />
+                 <asp:Label ID="Label2" runat="server" Text="Ruta Fisica en server"></asp:Label>
+                 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox><br />
+                 <asp:Label ID="Label5" runat="server" Text="Nombre de archivo"></asp:Label>
+                 <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox><br />
+                 <asp:Label ID="Label6" runat="server" Text="Mensaje"></asp:Label>
+                 <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox><br />
+                 <asp:Button ID="btnSubirArchivo" runat="server" Text="Subir archivo" CssClass="btn btn-default" OnClick="btnSubirArchivo_Click"/>
              </div>
 
     </div>

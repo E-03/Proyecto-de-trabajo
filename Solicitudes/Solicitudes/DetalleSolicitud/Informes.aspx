@@ -54,12 +54,14 @@
         <div class="container">    
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Height="469px" Width="904px">
-                <LocalReport ReportPath="Reportes\Reporte.rdlc">
+                <LocalReport ReportPath="Reportes\Reporte.rdlc" ReportEmbeddedResource="Solicitudes.Reportes.Reporte.rdlc">
                     <DataSources>
-                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="DataSetSolicitudesAbiertas" />
+                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource2" Name="DataSetSolicitudesAbiertas" />
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
+               
+            <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="GetData" TypeName="dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter"></asp:ObjectDataSource>
                
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="Solicitudes.dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter">
                 <SelectParameters>
