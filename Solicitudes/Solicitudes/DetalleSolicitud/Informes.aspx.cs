@@ -24,7 +24,7 @@ namespace Solicitudes.DetalleSolicitud
         {
             dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter pr = new dbSolicitudesWFDataSetTableAdapters.pro_Ver_Solicitudes_AbiertasTableAdapter();
             dbSolicitudesWFDataSet Solicitud = new dbSolicitudesWFDataSet();
-            pr.Fill(Solicitud.pro_Ver_Solicitudes_Abiertas,txt.Text);
+            pr.Fill(Solicitud.pro_Ver_Solicitudes_Abiertas,txtInformes.Text);
         }
         public void LlenarGridDetalleVenta(GridView GridView)
         {

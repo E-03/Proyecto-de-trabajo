@@ -22,7 +22,7 @@
                      <li role="presentation" class="active"><a href="../Paginas/ObjetosProblemas.aspx">Objetos / Problemas</a></li>                    
                      <li role="presentation" class="active"><a href="../DetalleSolicitud/DSolicitud.aspx">Detalle Solicitud</a></li>
                      <li role="presentation" class="active"><a href="#">Departamento</a></li>
-                     <li role="presentation" class="active"><a href="Informes.aspx">Informes</a></li>
+                     <li role="presentation" class="active"><a href="../DetalleSolicitud/Informes.aspx">Informes</a></li>
                  </ul>
              </nav>
         </header>
@@ -34,7 +34,7 @@
                     <asp:Label ID="Label7" runat="server" Text="Id del Problema"></asp:Label>
                     <asp:TextBox runat="server" ID="txtIdProblema" CssClass="form-control" Width="400px" Enabled="False"></asp:TextBox><br />  
                     <asp:Label ID="Label1" runat="server" Text="Titulo del Problema*"></asp:Label>
-                    <asp:TextBox runat="server" ID="txtTituloProblema" CssClass="form-control" Width="400px" required ="required"></asp:TextBox><br />
+                    <asp:TextBox runat="server" ID="txtTituloProblema" CssClass="form-control" Width="400px"  placeholder="Insertar objeto problema. ejemplo: Computadora" required ="required"></asp:TextBox><br />
                     <asp:Label ID="Label2" runat="server" Text="Descripcion del problema*"></asp:Label>
                     <asp:TextBox runat="server" ID="txtDescripcionProblema" CssClass="form-control" Width="400px" required ="required"></asp:TextBox><br />             
                     <asp:Button ID="btnGuardarProblema" runat="server" Text="Guardar Problema" CssClass="btn btn-primary" OnClick="btnGuardarProblema_Click"/>

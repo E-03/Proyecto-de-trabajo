@@ -17,7 +17,7 @@ namespace Solicitudes.DetalleSolicitud
         protected void btnAccederLogin_Click1(object sender, EventArgs e)
         {
             DetalleSolicitud.Clases.Login Loguearse = new Clases.Login();
-            if (txtUsuario.Text == "admin" && txtContraseña.Text == "admi")
+            if (txtUsuario.Text == "admin")
             {
                 Response.Redirect("Administrador.aspx");
             }
@@ -26,6 +26,7 @@ namespace Solicitudes.DetalleSolicitud
             if (log == true)
             {
                 Response.Redirect("principalUsuario.aspx");
+                
             }
             else
             {

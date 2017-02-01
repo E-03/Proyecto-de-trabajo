@@ -38,8 +38,19 @@ namespace Solicitudes.DetalleSolicitud
                 if (msj == DialogResult.Yes)
                 {
                     DetalleSolicitud.Clases.ActualizarSolicitud actualizarSolicitudRecibida = new Clases.ActualizarSolicitud();
-                    actualizarSolicitudRecibida.actualizarDetalleSolicitud(id, txtEstadoDetalleSolicitud.Text, txtEstadoSolicitud2.Text, Departamento);      
-                    Response.Redirect("DSolicitud.aspx");
+                    actualizarSolicitudRecibida.actualizarDetalleSolicitud(id, txtEstadoDetalleSolicitud.Text, txtEstadoSolicitud2.Text, Departamento);
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert",
+                        "alert('El registro ha sido asignado o actualizado')", true);
+                    txtIddetalleSolicitud.Text = string.Empty;
+                    txtEstadoDetalleSolicitud.Text = string.Empty;
+                    txtEstadoSolicitud2.Text = string.Empty;
+                    txtPrioridad.Text = string.Empty;
+                    txtFechaSolicitud.Text = string.Empty;
+                    txtDepartamentofk.Text = string.Empty;
+                    txtClienteFk.Text = string.Empty;
+                    txtProblemaFk.Text = string.Empty;
+                    txtDescripcion.Text = string.Empty;
+                    //Response.Redirect("DSolicitud.aspx");
                     lblResultadoSolicitud.Text = "El registro ha sido asignado o actualizado";
                 }
                 else
@@ -94,10 +105,22 @@ namespace Solicitudes.DetalleSolicitud
 
         protected void btnNuevo_Click(object sender, EventArgs e)
         {
-            DetalleSolicitud.Clases.VerSolicitud nuevaSolicitud = new Clases.VerSolicitud();
-            int id = Convert.ToInt32(txtIddetalleSolicitud.Text);
-            //nuevaSolicitud.Mostrar_Informacion_Del_Cliente(id, txtPrioridad, txtFechaSolicitud, txtDescripcion, txtClienteFk, txtProblemaFk, lblResultadoSolicitud);
-            nuevaSolicitud.Mostrar_Informacion_Del_Cliente(id,txtPrioridad, txtFechaSolicitud, txtClienteFk, txtProblemaFk, txtDescripcion, lblResultadoSolicitud);
+            DetalleSolicitud.Clases.VerSolicitud nuevaSolicitud = new Clases.VerSolicitud();            
+            int num = 0;
+            if (!string.IsNullOrEmpty(txtIddetalleSolicitud.Text))
+            {
+                if (!int.TryParse(txtIddetalleSolicitud.Text, out num))
+                {
+                    lblResultadoSolicitud.Text= "El Id debe ser un valor numerico";
+                    return;
+                }
+                else
+                {
+                    int id = Convert.ToInt32(txtIddetalleSolicitud.Text);
+                    //nuevaSolicitud.Mostrar_Informacion_Del_Cliente(id, txtPrioridad, txtFechaSolicitud, txtDescripcion, txtClienteFk, txtProblemaFk, lblResultadoSolicitud);
+                    nuevaSolicitud.Mostrar_Informacion_Del_Cliente(id, txtPrioridad, txtFechaSolicitud, txtClienteFk, txtProblemaFk, txtDescripcion, lblResultadoSolicitud);
+                }
+            }
         }
     }
 }
