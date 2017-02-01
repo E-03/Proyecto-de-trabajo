@@ -97,7 +97,6 @@
     <Content Include="Estilos\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Paginas\Cliente.aspx" />
-    <Content Include="Paginas\DepartamentoSoftwareSolicitud.aspx" />
     <Content Include="Paginas\DetalleSolicitud.aspx" />
     <Content Include="Paginas\ObjetosProblemas.aspx" />
     <Content Include="Paginas\solicitud.aspx" />
@@ -173,13 +172,6 @@
     </Compile>
     <Compile Include="Paginas\Cliente.aspx.designer.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\DepartamentoSoftwareSolicitud.aspx.cs">
-      <DependentUpon>DepartamentoSoftwareSolicitud.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\DepartamentoSoftwareSolicitud.aspx.designer.cs">
-      <DependentUpon>DepartamentoSoftwareSolicitud.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\DetalleSolicitud.aspx.cs">
       <DependentUpon>DetalleSolicitud.aspx</DependentUpon>

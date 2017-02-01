@@ -19,7 +19,7 @@
             <nav>
                  <ul class="nav nav-pills">
                       <li role="presentation" class="active"><a href="principalUsuario.aspx">Home</a></li>
-                     <li role="presentation" class="active"><a href="AgregarSolicitud.aspx">Detalle Problema</a></li>   
+                     <li role="presentation" class="active"><a href="AgregarSolicitud.aspx">Detalle Problema</a></li><br />
                      <h3><a href="index.aspx">Cerrar sesion</a></h3>                
                  </ul>
              </nav>
